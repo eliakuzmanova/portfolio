@@ -1,0 +1,172 @@
+{
+  "nav": {
+    "home": "Start",
+    "projects": "Projekte",
+    "skills": "Fähigkeiten",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "greeting": "Hallo, ich bin",
+    "title": "Full Stack Entwickler",
+    "subtitle": "Ich erstelle außergewöhnliche digitale Erfahrungen durch sauberen Code und innovative Lösungen",
+    "cta": "Meine Arbeit ansehen",
+    "scroll": "Scrollen zum Erkunden"
+  },
+  "about": {
+    "title": "Über Mich",
+    "description": "Leidenschaftlicher Entwickler mit Expertise in modernen Web-Technologien. Ich spezialisiere mich auf den Bau skalierbarer Anwendungen mit Fokus auf Benutzererfahrung und Performance.",
+    "name": "Dein Name",
+    "role": "Full Stack Entwickler & Tech-Enthusiast",
+    "bio": "Ich bin ein leidenschaftlicher Entwickler, der es liebt, innovative Lösungen zu schaffen. Wenn ich nicht am Programmieren bin, findest du mich beim Erkunden neuer Technologien, beim Beitragen zu Open-Source-Projekten oder beim Teilen von Wissen mit der Entwicklergemeinschaft.",
+    "tags": ["Problemlöser", "Teamplayer", "Kontinuierlicher Lerner", "Tech-Enthusiast"],
+    "experience": "Jahre Erfahrung",
+    "projects": "Abgeschlossene Projekte",
+    "technologies": "Beherrschte Technologien"
+  },
+  "hobbies": {
+    "title": "Hobbys & Interessen",
+    "subtitle": "Was ich in meiner Freizeit gerne mache",
+    "items": [
+      {
+        "icon": "Music",
+        "name": "Musikproduktion",
+        "description": "Beats erstellen und mit verschiedenen Genres in meinem Heimstudio experimentieren."
+      },
+      {
+        "icon": "Camera",
+        "name": "Fotografie",
+        "description": "Momente einfangen und die Welt durch meine Linse erkunden, besonders Natur und urbane Landschaften."
+      },
+      {
+        "icon": "Gamepad2",
+        "name": "Gaming",
+        "description": "Genieße Strategiespiele und Indie-Titel. Liebe es, Spielmechaniken und Design-Patterns zu analysieren."
+      },
+      {
+        "icon": "Dumbbell",
+        "name": "Fitness",
+        "description": "Aktiv bleiben mit Gewichtheben und Laufen. Ein gesunder Körper hält den Geist scharf fürs Programmieren."
+      },
+      {
+        "icon": "BookOpen",
+        "name": "Lesen",
+        "description": "Tech-Bücher, Sci-Fi-Romane und Design-Philosophie. Lerne immer etwas Neues."
+      },
+      {
+        "icon": "Coffee",
+        "name": "Kaffeekultur",
+        "description": "Lokale Cafés erkunden und meine Pour-Over-Technik perfektionieren. Guter Kaffee treibt guten Code an."
+      },
+      {
+        "icon": "Plane",
+        "name": "Reisen",
+        "description": "Neue Orte, Kulturen und Tech-Szenen auf der ganzen Welt erkunden. Reisen erweitert die Perspektive."
+      },
+      {
+        "icon": "Palette",
+        "name": "Design",
+        "description": "UI/UX-Design, digitale Kunst und kreative Projekte. Liebe es, Ideen visuell zum Leben zu erwecken."
+      },
+      {
+        "icon": "Code",
+        "name": "Side Projects",
+        "description": "Persönliche Projekte bauen, zu Open Source beitragen und mit neuen Tech-Stacks experimentieren."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Ausgewählte Projekte",
+    "subtitle": "Eine Auswahl von Projekten, an denen ich als Teil von Entwicklungsteams mitgewirkt habe",
+    "view": "Projekt ansehen",
+    "code": "Code ansehen",
+    "contribution": "Mein Beitrag",
+    "note": "Hinweis: Dies ist eine Auswahl öffentlicher Projekte. Weitere Projekte unterliegen derzeit einer Geheimhaltungsvereinbarung oder befinden sich in Entwicklung.",
+    "items": {
+      "project1": {
+        "title": "BASF Virtual Car",
+        "description": "Interaktive 3D-Auto-Konfigurator-Plattform, die Nutzern ermöglicht, Materialien und Komponenten zu erkunden. Entwickelt CMS-Integrationen, API-Verbindungen und Synchronisationsskripte für die Offline-Version.",
+        "contribution": "CMS-Setup & Integrationen, API-Verbindungen, Synchronisationsskripte, Offline-Version Integration",
+        "tech": "Vue.js, Three.js, Node.js, CMS, REST APIs, WebGL",
+        "url": "https://www.basf-vcar.com/",
+        "github": null
+      },
+      "project2": {
+        "title": "BASF Virtual Car - Offline",
+        "description": "Offline-Version der Virtual Car Plattform mit lokaler Datensynchronisation und PWA-Funktionen für nahtlose Benutzererfahrung ohne Internetverbindung.",
+        "contribution": "Offline-Funktionalität, Datensynchronisation, PWA-Implementierung",
+        "tech": "Vue.js, PWA, IndexedDB, Service Workers, Sync API",
+        "url": "https://www.basf-vcar.com/basf-vcar-offline",
+        "github": null
+      },
+      "project3": {
+        "title": "UP Design Studio",
+        "description": "Moderne Design-Studio-Portfolio-Website, die multidisziplinäre Designarbeit präsentiert. Implementierte neue Features, Bug-Fixes und optimierte Server-Konfiguration.",
+        "contribution": "Feature-Entwicklung, Bug-Fixes, Nginx-Konfiguration, Performance-Optimierung",
+        "tech": "Next.js, React, Nginx, Headless CMS, TypeScript",
+        "url": "https://www.updesignstudio.de/",
+        "github": null
+      },
+      "project4": {
+        "title": "SMINA - Online Sanitätshaus",
+        "description": "E-Commerce-Plattform für medizinische Hilfsmittel und Mobilitätsprodukte. Vollständiger Online-Shop mit Produktkatalog, Rezept-Upload und Partner-Netzwerk-Integration.",
+        "contribution": "Frontend-Entwicklung, Feature-Implementierung, API-Integrationen",
+        "tech": "React, Node.js, E-Commerce, Zahlungsintegration, CMS",
+        "url": "https://www.smina.de/",
+        "github": null
+      },
+      "project5": {
+        "title": "Khimi - Auxilium Gruppe",
+        "description": "Unternehmensplattform mit CMS-Integration und benutzerdefinierten Features. Content-Management-System eingerichtet und Server-Infrastruktur konfiguriert.",
+        "contribution": "CMS-Setup, Backend-Entwicklung, Nginx-Konfiguration, Feature-Implementierung",
+        "tech": "CMS, Nginx, Backend APIs, Server-Konfiguration",
+        "url": "https://khimi.auxiliumgruppe.online/",
+        "github": null
+      },
+      "project6": {
+        "title": "Dürr Interactive Showroom",
+        "description": "Interaktive Showroom-Plattform für industrielle Lösungen. Implementierte Strapi CMS Backend und konfigurierte Server-Infrastruktur für mehrere interaktive Anwendungen.",
+        "contribution": "Strapi CMS Setup, Nginx-Konfiguration, Backend-Entwicklung",
+        "tech": "Strapi CMS, Node.js, Nginx, Interactive 3D, WebGL",
+        "url": "https://showroom.durr.com/",
+        "github": null
+      },
+      "project7": {
+        "title": "Multi-Tenant Sanitätshaus Plattform",
+        "description": "Skalierbare Multi-Tenant-Plattform für mehrere medizinische Versorgungsunternehmen. Jeder Tenant hat angepasstes Branding und Features, während die Kerninfrastruktur geteilt wird.",
+        "contribution": "Multi-Tenant-Architektur, Nginx-Konfiguration, Tracking-Integration, Feature-Entwicklung",
+        "tech": "Multi-Tenant-Architektur, Nginx, Tracking-Integration, CMS, React",
+        "url": "https://www.xcarstens.de/",
+        "tenants": ["xcarstens.de", "luttermann-wesel.de", "thiesmedicenter.de", "luttermann.de"],
+        "github": null
+      },
+      "project8": {
+        "title": "Weitere Projekte",
+        "description": "Mehrere weitere Projekte befinden sich derzeit in Entwicklung oder unterliegen Geheimhaltungsvereinbarungen. Dazu gehören Enterprise-Anwendungen, interne Tools und kundenspezifische Lösungen.",
+        "contribution": "Verschiedene Beiträge in Frontend, Backend und Infrastruktur",
+        "tech": "Verschiedene moderne Web-Technologien",
+        "url": null,
+        "github": "https://github.com/EliaKuzmanova7"
+      }
+    }
+  },
+  "skills": {
+    "title": "Fähigkeiten & Technologien",
+    "subtitle": "Technologien, mit denen ich arbeite",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "cms": "CMS & Tools"
+  },
+  "contact": {
+    "title": "Lass uns zusammenarbeiten",
+    "subtitle": "Ich bin immer offen für neue Projekte, kreative Ideen oder Möglichkeiten, Teil deiner Visionen zu sein.",
+    "email": "E-Mail",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "getInTouch": "Kontakt aufnehmen"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten",
+    "built": "Erstellt mit Next.js und ❤️"
+  }
+}
+

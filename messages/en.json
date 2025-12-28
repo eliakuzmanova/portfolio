@@ -1,0 +1,172 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "title": "Full Stack Developer",
+    "subtitle": "I craft exceptional digital experiences through clean code and innovative solutions",
+    "cta": "View My Work",
+    "scroll": "Scroll to explore"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Passionate developer with expertise in modern web technologies. I specialize in building scalable applications with focus on user experience and performance.",
+    "name": "Your Name",
+    "role": "Full Stack Developer & Tech Enthusiast",
+    "bio": "I'm a passionate developer who loves creating innovative solutions. When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.",
+    "tags": ["Problem Solver", "Team Player", "Continuous Learner", "Tech Enthusiast"],
+    "experience": "Years of Experience",
+    "projects": "Projects Completed",
+    "technologies": "Technologies Mastered"
+  },
+  "hobbies": {
+    "title": "Hobbies & Interests",
+    "subtitle": "What I love doing in my free time",
+    "items": [
+      {
+        "icon": "Music",
+        "name": "Music Production",
+        "description": "Creating beats and experimenting with different genres in my home studio."
+      },
+      {
+        "icon": "Camera",
+        "name": "Photography",
+        "description": "Capturing moments and exploring the world through my lens, especially nature and urban landscapes."
+      },
+      {
+        "icon": "Gamepad2",
+        "name": "Gaming",
+        "description": "Enjoying strategy games and indie titles. Love analyzing game mechanics and design patterns."
+      },
+      {
+        "icon": "Dumbbell",
+        "name": "Fitness",
+        "description": "Staying active with weightlifting and running. A healthy body keeps the mind sharp for coding."
+      },
+      {
+        "icon": "BookOpen",
+        "name": "Reading",
+        "description": "Tech books, sci-fi novels, and design philosophy. Always learning something new."
+      },
+      {
+        "icon": "Coffee",
+        "name": "Coffee Culture",
+        "description": "Exploring local coffee shops and perfecting my pour-over technique. Great coffee fuels great code."
+      },
+      {
+        "icon": "Plane",
+        "name": "Travel",
+        "description": "Exploring new places, cultures, and tech scenes around the world. Travel broadens perspective."
+      },
+      {
+        "icon": "Palette",
+        "name": "Design",
+        "description": "UI/UX design, digital art, and creative projects. Love bringing ideas to life visually."
+      },
+      {
+        "icon": "Code",
+        "name": "Side Projects",
+        "description": "Building personal projects, contributing to open source, and experimenting with new tech stacks."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "A selection of projects I contributed to as part of development teams",
+    "view": "View Project",
+    "code": "View Code",
+    "contribution": "My Contribution",
+    "note": "Note: This is a selection of public projects. Additional projects are currently under NDA or in development.",
+    "items": {
+      "project1": {
+        "title": "BASF Virtual Car",
+        "description": "Interactive 3D car configurator platform allowing users to explore materials and components. Developed CMS integrations, API connections, and synchronization scripts for the offline version.",
+        "contribution": "CMS setup & integrations, API connections, synchronization scripts, offline version integration",
+        "tech": "Vue.js, Three.js, Node.js, CMS, REST APIs, WebGL",
+        "url": "https://www.basf-vcar.com/",
+        "github": null
+      },
+      "project2": {
+        "title": "BASF Virtual Car - Offline",
+        "description": "Offline version of the Virtual Car platform with local data synchronization and PWA capabilities for seamless user experience without internet connection.",
+        "contribution": "Offline functionality, data synchronization, PWA implementation",
+        "tech": "Vue.js, PWA, IndexedDB, Service Workers, Sync API",
+        "url": "https://www.basf-vcar.com/basf-vcar-offline",
+        "github": null
+      },
+      "project3": {
+        "title": "UP Design Studio",
+        "description": "Modern design studio portfolio website showcasing multidisciplinary design work. Implemented new features, bug fixes, and optimized server configuration.",
+        "contribution": "Feature development, bug fixes, Nginx configuration, performance optimization",
+        "tech": "Next.js, React, Nginx, Headless CMS, TypeScript",
+        "url": "https://www.updesignstudio.de/",
+        "github": null
+      },
+      "project4": {
+        "title": "SMINA - Online Sanitätshaus",
+        "description": "E-commerce platform for medical aids and mobility products. Full-featured online shop with product catalog, prescription upload, and partner network integration.",
+        "contribution": "Frontend development, feature implementation, API integrations",
+        "tech": "React, Node.js, E-commerce, Payment Integration, CMS",
+        "url": "https://www.smina.de/",
+        "github": null
+      },
+      "project5": {
+        "title": "Khimi - Auxilium Gruppe",
+        "description": "Corporate platform with CMS integration and custom features. Set up content management system and configured server infrastructure.",
+        "contribution": "CMS setup, backend development, Nginx configuration, feature implementation",
+        "tech": "CMS, Nginx, Backend APIs, Server Configuration",
+        "url": "https://khimi.auxiliumgruppe.online/",
+        "github": null
+      },
+      "project6": {
+        "title": "Dürr Interactive Showroom",
+        "description": "Interactive showroom platform showcasing industrial solutions. Implemented Strapi CMS backend and configured server infrastructure for multiple interactive applications.",
+        "contribution": "Strapi CMS setup, Nginx configuration, backend development",
+        "tech": "Strapi CMS, Node.js, Nginx, Interactive 3D, WebGL",
+        "url": "https://showroom.durr.com/",
+        "github": null
+      },
+      "project7": {
+        "title": "Multi-Tenant Sanitätshaus Platform",
+        "description": "Scalable multi-tenant platform serving multiple medical supply companies. Each tenant has customized branding and features while sharing core infrastructure.",
+        "contribution": "Multi-tenant architecture, Nginx configuration, tracking integration, feature development",
+        "tech": "Multi-Tenant Architecture, Nginx, Tracking Integration, CMS, React",
+        "url": "https://www.xcarstens.de/",
+        "tenants": ["xcarstens.de", "luttermann-wesel.de", "thiesmedicenter.de", "luttermann.de"],
+        "github": null
+      },
+      "project8": {
+        "title": "Additional Projects",
+        "description": "Several additional projects are currently under development or covered by non-disclosure agreements. These include enterprise applications, internal tools, and client-specific solutions.",
+        "contribution": "Various contributions across frontend, backend, and infrastructure",
+        "tech": "Various modern web technologies",
+        "url": null,
+        "github": "https://github.com/EliaKuzmanova7"
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "subtitle": "Technologies I work with",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "cms": "CMS & Tools"
+  },
+  "contact": {
+    "title": "Let's Work Together",
+    "subtitle": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "getInTouch": "Get in Touch"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "built": "Built with Next.js and ❤️"
+  }
+}
+
