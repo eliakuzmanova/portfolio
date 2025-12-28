@@ -4,7 +4,7 @@ import About from '@/components/About';
 // import Hobbies from '@/components/Hobbies';
 import Projects from '@/components/Projects';
 import Skills from '@/components/Skills';
-import Contact from '@/components/Contact';
+// import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
       {/* <Hobbies /> */}
       <Projects />
       <Skills />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </main>
   );

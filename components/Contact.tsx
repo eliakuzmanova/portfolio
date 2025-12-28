@@ -104,21 +104,18 @@ export default function Contact() {
       label: t('email'),
       value: 'eliakuzmanova@gmail.com',
       href: 'mailto:eliakuzmanova@gmail.com',
-      color: 'from-cyan-500 to-primary-500',
     },
     {
       icon: Linkedin,
       label: t('linkedin'),
       value: 'linkedin.com/in/elia-kuzmanova-4b4730203',
       href: 'https://linkedin.com/in/elia-kuzmanova-4b4730203',
-      color: 'from-primary-500 to-cyan-500',
     },
     {
       icon: Github,
       label: t('github'),
       value: 'github.com/EliaKuzmanova7',
       href: 'https://github.com/EliaKuzmanova7',
-      color: 'from-accent-500 to-primary-500',
     },
   ];
 
@@ -132,8 +129,8 @@ export default function Contact() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
-            <span className="text-gradient">{t('title')}</span>
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-forest-200">
+            {t('title')}
           </h2>
           <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
             {t('subtitle')}
@@ -155,7 +152,7 @@ export default function Contact() {
                 whileHover={{ y: -10, scale: 1.05 }}
                 className="glass rounded-2xl p-6 text-center group hover:glass-strong transition-all"
               >
-                <div className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br ${method.color} rounded-full mb-4 group-hover:scale-110 transition-transform`}>
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-forest-500 rounded-full mb-4 group-hover:scale-110 transition-transform">
                   <method.icon size={32} className="text-white" />
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-2">{method.label}</h3>
@@ -183,7 +180,7 @@ export default function Contact() {
                     className={`w-full px-4 py-3 bg-dark-800/50 border rounded-lg text-white placeholder-gray-500 focus:outline-none transition-colors ${
                       errors.name
                         ? 'border-red-500 focus:border-red-500'
-                        : 'border-white/10 focus:border-cyan-500'
+                        : 'border-white/10 focus:border-forest-500'
                     }`}
                     placeholder="Your Name"
                   />
@@ -201,7 +198,7 @@ export default function Contact() {
                     className={`w-full px-4 py-3 bg-dark-800/50 border rounded-lg text-white placeholder-gray-500 focus:outline-none transition-colors ${
                       errors.email
                         ? 'border-red-500 focus:border-red-500'
-                        : 'border-white/10 focus:border-cyan-500'
+                        : 'border-white/10 focus:border-forest-500'
                     }`}
                     placeholder="your.email@example.com"
                   />
@@ -220,7 +217,7 @@ export default function Contact() {
                   className={`w-full px-4 py-3 bg-dark-800/50 border rounded-lg text-white placeholder-gray-500 focus:outline-none transition-colors ${
                     errors.subject
                       ? 'border-red-500 focus:border-red-500'
-                      : 'border-white/10 focus:border-cyan-500'
+                      : 'border-white/10 focus:border-forest-500'
                   }`}
                   placeholder="What's this about?"
                 />
@@ -238,7 +235,7 @@ export default function Contact() {
                   className={`w-full px-4 py-3 bg-dark-800/50 border rounded-lg text-white placeholder-gray-500 focus:outline-none transition-colors resize-none ${
                     errors.message
                       ? 'border-red-500 focus:border-red-500'
-                      : 'border-white/10 focus:border-cyan-500'
+                      : 'border-white/10 focus:border-forest-500'
                   }`}
                   placeholder="Your message here..."
                 />
@@ -275,7 +272,7 @@ export default function Contact() {
                 disabled={isSubmitting}
                 whileHover={{ scale: isSubmitting ? 1 : 1.05 }}
                 whileTap={{ scale: isSubmitting ? 1 : 0.95 }}
-                className={`w-full md:w-auto px-8 py-4 bg-gradient-to-r from-primary-500 via-cyan-500 to-accent-500 rounded-full font-semibold text-white shadow-lg shadow-cyan-500/50 hover:shadow-accent-500/70 transition-all flex items-center gap-2 ${
+                className={`w-full md:w-auto px-8 py-4 bg-forest-500 rounded-full font-semibold text-white hover:bg-forest-400 transition-all flex items-center gap-2 ${
                   isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
                 }`}
               >

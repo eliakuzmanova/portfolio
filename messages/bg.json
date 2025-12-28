@@ -15,10 +15,10 @@
   "about": {
     "title": "За Мен",
     "description": "Страстен разработчик с експертиза в модерни уеб технологии. Специализирам се в изграждането на мащабируеми приложения с фокус върху потребителското изживяване и производителността.",
-    "name": "Твоето Име",
-    "role": "Full Stack Разработчик & Tech Ентусиаст",
-    "bio": "Аз съм страстен разработчик, който обича да създава иновативни решения. Когато не програмирам, ще ме намериш да изследвам нови технологии, да допринасям за open-source проекти или да споделям знания с разработческата общност.",
-    "tags": ["Решаващ Проблеми", "Команден Играч", "Постоянно Учащ", "Tech Ентусиаст"],
+    "name": "Elia Kuzmanova",
+    "role": "Full Stack Разработчик",
+    "bio": "Приятелска, отзивчива и винаги готова за следващото предизвикателство – това съм аз. Обичам да уча нови неща и да намирам творчески решения. Нови технологии? Донеси ги! Сложни проблеми? Виждам ги като вълнуващи пъзели. Процъфтявам в екипна среда и обичам да помагам на другите да постигнат целите си. Мотивацията и ангажираността са естествени за мен.",
+    "tags": ["Приятелска", "Отзивчива", "Готова да Учи", "Мотивирана", "Ангажирана", "Креативна"],
     "experience": "Години Опит",
     "projects": "Завършени Проекти",
     "technologies": "Освоени Технологии"
@@ -81,68 +81,98 @@
     "code": "Виж Кода",
     "contribution": "Моят Принос",
     "note": "Забележка: Това е избор от публични проекти. Допълнителни проекти в момента са под споразумение за неразгласяване или в процес на разработка.",
+    "private": "Не е публично",
+    "availableOnRequest": "Достъпно при заявка",
     "items": {
+      "project7": {
+        "title": "Multi-Tenant Санитарен Дом Платформа",
+        "description": "Мащабируема multi-tenant платформа за компании за медицински доставки. Всеки от 14-те планирани tenants има индивидуален брандинг и конфигурация, докато споделя основната инфраструктура. Изградена с Next.js 15, Algolia търсене, Directus CMS и Matomo проследяване.",
+        "contribution": "Като част от екипа за разработка: Multi-tenant архитектура & настройка, CMS настройка & управление на съдържание, Algolia търсене, Matomo проследяване, разработка на функции, корекции на грешки, документация, Nginx конфигурация",
+        "tech": "Next.js 15, Multi-Tenant Архитектура, Algolia, Directus CMS, Matomo, Nginx, TypeScript, Zeptomail, ESLint, Prettier",
+        "url": "https://www.xcarstens.de/",
+        "tenants": ["xcarstens.de", "luttermann-wesel.de", "thiesmedicenter.de", "luttermann.de"],
+        "github": null
+      },
       "project1": {
         "title": "BASF Virtual Car",
-        "description": "Интерактивна 3D платформа за конфигуриране на автомобили, която позволява на потребителите да изследват материали и компоненти. Разработени CMS интеграции, API връзки и синхронизационни скриптове за офлайн версията.",
-        "contribution": "CMS настройка & интеграции, API връзки, синхронизационни скриптове, интеграция на офлайн версия",
-        "tech": "Vue.js, Three.js, Node.js, CMS, REST APIs, WebGL",
+        "description": "Обширна интерактивна 3D платформа за конфигуриране на автомобили, която позволява на потребителите да изследват материали и компоненти. Миграция от Vue 2 към Vue 3, Strapi CMS интеграция, автоматизирани скриптове за резервно копие и синхронизация на езици. NGINX прокси сървър за маршрутизация между различни приложения (Virtual Car, Офлайн версия, Battery Visualizer).",
+        "contribution": "Като част от екипа за разработка: Миграция от Vue 2 към Vue 3, Strapi CMS настройка & интеграция, Express-базирани автоматизационни скриптове (създаване на резервни копия, синхронизация на езици, извличане на съдържание за офлайн версия), NGINX прокси сървър конфигурация, API връзки, PWA имплементация",
+        "tech": "Vue 3, Three.js, Strapi CMS, Node.js, Express, NGINX, Railway, PWA, REST APIs, WebGL, IndexedDB, Service Workers",
         "url": "https://www.basf-vcar.com/",
         "github": null
       },
       "project2": {
         "title": "BASF Virtual Car - Offline",
-        "description": "Офлайн версия на платформата Virtual Car с локална синхронизация на данни и PWA възможности за безпроблемно потребителско изживяване без интернет връзка.",
-        "contribution": "Офлайн функционалност, синхронизация на данни, PWA имплементация",
-        "tech": "Vue.js, PWA, IndexedDB, Service Workers, Sync API",
+        "description": "Офлайн версия на платформата Virtual Car с локална синхронизация на данни и PWA възможности. Автоматично извличане на съдържание от резервни копия за безпроблемно потребителско изживяване без интернет връзка. Интегрирана в NGINX прокси инфраструктура.",
+        "contribution": "Като част от екипа за разработка: Офлайн функционалност, синхронизация на данни, PWA имплементация, извличане на съдържание от резервни копия, Express скриптове за автоматично предоставяне на съдържание",
+        "tech": "Vue 3, PWA, IndexedDB, Service Workers, Express, NGINX, Railway, Sync API",
         "url": "https://www.basf-vcar.com/basf-vcar-offline",
         "github": null
       },
       "project3": {
         "title": "UP Design Studio",
-        "description": "Модерен дизайн студио портфолио уебсайт, показващ мултидисциплинарна дизайн работа. Имплементирани нови функции, корекции на грешки и оптимизирана конфигурация на сървъра.",
-        "contribution": "Разработка на функции, корекции на грешки, Nginx конфигурация, оптимизация на производителността",
-        "tech": "Next.js, React, Nginx, Headless CMS, TypeScript",
+        "description": "Модерен дизайн студио портфолио уебсайт, показващ мултидисциплинарна дизайн работа. NGINX прокси сървър за управление на домейни (www.updesignstudio.de, www.updesignstudio.email, upviz.updesignstudio.de, staging.updesignstudio.de, start.updesignstudio.de). Contentful CMS интеграция, разработка на функции и оптимизация на сървъра.",
+        "contribution": "Като част от екипа за разработка: NGINX прокси сървър настройка & конфигурация, управление на домейни, Contentful CMS интеграция, разработка на функции, корекции на грешки, оптимизация на производителността",
+        "tech": "Next.js, NGINX, Contentful CMS, Railway, JavaScript",
         "url": "https://www.updesignstudio.de/",
         "github": null
       },
       "project4": {
         "title": "SMINA - Онлайн Санитарен Дом",
-        "description": "E-commerce платформа за медицински помощни средства и мобилностни продукти. Пълнофункционален онлайн магазин с продуктов каталог, качване на рецепта и интеграция с партньорска мрежа.",
-        "contribution": "Frontend разработка, имплементация на функции, API интеграции",
-        "tech": "React, Node.js, E-commerce, Интеграция на плащания, CMS",
+        "description": "Пълнофункционална e-commerce платформа за медицински помощни средства с над 200 партньорски локации. Функции: качване на рецепта с Google Document AI, Algolia търсене, SMINA Box (дигитална поръчка на помощни средства за грижа), чатбот, Contentful CMS, Shopify интеграция, обработка на плащания (Klarna, PayPal) и DHL доставка.",
+        "contribution": "Като част от екипа за разработка: Разработка на функции, корекции на грешки, тестване, frontend разработка, API интеграции (Contentful, Shopify, Algolia, Google Document AI), имплементация на качване на рецепта, интеграция на плащания",
+        "tech": "Next.js 15, Contentful CMS, Algolia, Shopify, Google Document AI, Material-UI, Tailwind CSS, Railway, Friendly Captcha, Nodemailer, ESLint, Prettier",
         "url": "https://www.smina.de/",
         "github": null
       },
       "project5": {
         "title": "Khimi - Auxilium Gruppe",
-        "description": "Корпоративна платформа с CMS интеграция и персонализирани функции. Настроена система за управление на съдържание и конфигурирана сървърна инфраструктура.",
-        "contribution": "CMS настройка, backend разработка, Nginx конфигурация, имплементация на функции",
-        "tech": "CMS, Nginx, Backend APIs, Конфигурация на сървър",
+        "description": "Игриво уеб приложение, което прави медицинските помощни средства от санитарни домове интересни и достъпни за деца. Продуктите се представят в игров формат, за да помогнат на децата да разберат и да се ангажират с помощни устройства по позитивен и привлекателен начин. Desktop-only приложение с Directus CMS, Zeptomail интеграция, Friendly Captcha и Excel експорт функционалност.",
+        "contribution": "Основно разработено самостоятелно (с малки корекции от екипа): CMS настройка, backend разработка, Nginx конфигурация, имплементация на функции",
+        "tech": "Next.js 16, Directus CMS, Zeptomail, Friendly Captcha, Tailwind CSS 4, Nginx, Railway, ESLint, Prettier",
         "url": "https://khimi.auxiliumgruppe.online/",
+        "private": true,
         "github": null
       },
       "project6": {
         "title": "Dürr Interactive Showroom",
-        "description": "Интерактивна showroom платформа, показваща индустриални решения. Имплементиран Strapi CMS backend и конфигурирана сървърна инфраструктура за множество интерактивни приложения.",
-        "contribution": "Strapi CMS настройка, Nginx конфигурация, backend разработка",
-        "tech": "Strapi CMS, Node.js, Nginx, Interactive 3D, WebGL",
+        "description": "Обширна интерактивна showroom платформа за индустриални решения с множество приложения (Interactive Paintshop, NAOTF Interactive, Battery Concept Line). Strapi CMS с отделен вход за посетители и достъп специфичен за приложения базиран на Strapi настройки. NGINX прокси сървър за управление на CMS, портал за преглед, сървър за автентификация и маршрутизация към множество интерактивни приложения. Private Networking на Railway за сигурна вътрешна комуникация между услуги.",
+        "contribution": "Като част от екипа за разработка: Strapi CMS настройка & конфигурация, система за вход на посетители с достъп специфичен за приложения, NGINX прокси сървър конфигурация (CMS, auth сървър, multi-app маршрутизация), backend разработка, Private Networking настройка",
+        "tech": "Strapi CMS, Node.js, NGINX, Railway, Private Networking, Auth Server, Interactive 3D, WebGL",
         "url": "https://showroom.durr.com/",
         "github": null
       },
-      "project7": {
-        "title": "Multi-Tenant Санитарен Дом Платформа",
-        "description": "Мащабируема multi-tenant платформа, обслужваща множество компании за медицински доставки. Всеки tenant има персонализиран брандинг и функции, докато споделя основната инфраструктура.",
-        "contribution": "Multi-tenant архитектура, Nginx конфигурация, интеграция на проследяване, разработка на функции",
-        "tech": "Multi-Tenant Архитектура, Nginx, Интеграция на Проследяване, CMS, React",
-        "url": "https://www.xcarstens.de/",
-        "tenants": ["xcarstens.de", "luttermann-wesel.de", "thiesmedicenter.de", "luttermann.de"],
+      "project9": {
+        "title": "NGINX Gateway & Proxy Server",
+        "description": "Централен NGINX gateway с OpenResty и Auth0 интеграция за multi-tenant инфраструктура. Управлява над 20 домейна (включително www.xcarstens.de, www.luttermann-wesel.de, wirliste.xcarstens.de, updesignstudio.auxiliumgruppe.de, khimi.auxiliumgruppe.online, www.auxiliumgruppe.de и други). Имплементира Private Networking на Railway, Lua-базирана автентификация, security headers, IP whitelisting и proxy routing към вътрешни услуги, както и външни Framer страници.",
+        "contribution": "Като част от екипа за разработка: Gateway настройка, NGINX конфигурация, управление на домейни, security headers, proxy routing",
+        "tech": "NGINX, OpenResty, Lua, Auth0, Railway, Docker, Private Networking",
+        "url": null,
+        "private": true,
+        "github": null
+      },
+      "project10": {
+        "title": "Meyra Power Wheelchairs - Конфигуратор",
+        "description": "Интерактивен конфигуратор за електрически инвалидни колички. Стъпка по стъпка конфигурационен процес с въпроси за употреба, ограничения и персонализиране. Функции: Мобилно-оптимизиран интерфейс, PDF експорт на конфигурацията, търсене на дилъри, споделяне на линк. Responsive дизайн с tab навигация за desktop и mobile tabs за смартфони.",
+        "contribution": "Като част от екипа за разработка: Frontend разработка, Vue 3 компоненти, конфигурационна логика, PDF експорт, интеграция с дилъри, mobile-responsive дизайн, UI/UX",
+        "tech": "Vue 3, Tailwind CSS 3.4, jsPDF, HTML5, CSS3, JavaScript, Railway",
+        "url": null,
+        "private": true,
+        "github": null
+      },
+      "project11": {
+        "title": "MacDermid Alpha - TrueNorth Selector Guide",
+        "description": "Интерактивна платформа за ръководство за материални решения за електронни решения. Интерактивна компасна навигация за избор на материали по области на приложение (Industrial, White Goods, PV, 2 Wheel EV, Auto EV, Auto ICE). Функции: Material Solution Positioning, Commercial Considerations, Technical Considerations, Tesseract OCR-базирано пълнотекстово търсене във всички презентационни слайдове и документи.",
+        "contribution": "Като част от екипа за разработка: Frontend разработка, Vue.js компоненти, имплементация на Tesseract OCR търсене, OCR услуга за автоматично извличане на текст от изображения, разработка на функции, UI/UX",
+        "tech": "Vue.js, Tesseract.js, HTML5, CSS3, JavaScript, Railway",
+        "url": null,
+        "private": true,
         "github": null
       },
       "project8": {
         "title": "Допълнителни Проекти",
         "description": "Няколко допълнителни проекта в момента са в процес на разработка или покрити от споразумения за неразгласяване. Те включват enterprise приложения, вътрешни инструменти и клиентски решения.",
-        "contribution": "Различни приноси във frontend, backend и инфраструктура",
+        "contribution": "Като част от различни екипи за разработка: Приноси във frontend, backend и инфраструктура",
         "tech": "Различни модерни уеб технологии",
         "url": null,
         "github": "https://github.com/EliaKuzmanova7"
@@ -152,9 +182,12 @@
   "skills": {
     "title": "Умения & Технологии",
     "subtitle": "Технологии, с които работя",
-    "frontend": "Frontend",
+    "languages": "Езици за Програмиране",
+    "frameworks": "Фреймуърци & Библиотеки",
+    "styling": "Стилизиране & Markup",
     "backend": "Backend",
-    "cms": "CMS & Инструменти"
+    "cms": "CMS",
+    "tools": "Инструменти & Инфраструктура"
   },
   "contact": {
     "title": "Нека Работим Заедно",

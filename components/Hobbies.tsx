@@ -45,8 +45,8 @@ export default function Hobbies() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
-            <span className="text-gradient">{t('title')}</span>
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-forest-200">
+            {t('title')}
           </h2>
           <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
             {t('subtitle')}
@@ -68,12 +68,12 @@ export default function Hobbies() {
               >
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0">
-                    <div className="w-14 h-14 bg-gradient-to-br from-cyan-500/20 via-primary-500/20 to-accent-500/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform border border-cyan-500/30">
-                      <IconComponent size={28} className="text-cyan-400" />
+                    <div className="w-14 h-14 bg-forest-800 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform border border-forest-600">
+                      <IconComponent size={28} className="text-forest-300" />
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-forest-300 transition-colors">
                       {hobby.name}
                     </h3>
                     <p className="text-gray-400 text-sm leading-relaxed">
@@ -88,7 +88,7 @@ export default function Hobbies() {
                       whileInView={{ width: `${Math.random() * 40 + 60}%` }}
                       viewport={{ once: true }}
                       transition={{ duration: 1, delay: index * 0.1 + 0.3 }}
-                      className="h-full bg-gradient-to-r from-cyan-500 via-primary-500 to-accent-500 rounded-full"
+                      className="h-full bg-forest-500 rounded-full"
                     />
                   </div>
                 </div>

@@ -9,7 +9,7 @@ import Link from 'next/link';
 const languages = [
   { code: 'en', name: 'English' },
   { code: 'de', name: 'Deutsch' },
-  { code: 'bg', name: 'Български' },
+  // { code: 'bg', name: 'Български' }, // Auskommentiert
 ];
 
 export default function Navigation() {
@@ -31,7 +31,7 @@ export default function Navigation() {
     { href: '#home', label: t('home') },
     { href: '#projects', label: t('projects') },
     { href: '#skills', label: t('skills') },
-    { href: '#contact', label: t('contact') },
+    // { href: '#contact', label: t('contact') },
   ];
 
   const getLocalizedPath = (lang: string) => {
@@ -52,7 +52,7 @@ export default function Navigation() {
           <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="text-2xl font-bold text-gradient"
+            className="text-2xl font-bold text-forest-200"
           >
             Portfolio
           </motion.div>
@@ -64,7 +64,7 @@ export default function Navigation() {
                 key={item.href}
                 href={item.href}
                 whileHover={{ y: -2 }}
-                className="text-gray-300 hover:text-cyan-400 transition-colors font-medium"
+                className="text-gray-300 hover:text-forest-300 transition-colors font-medium"
               >
                 {item.label}
               </motion.a>
@@ -76,7 +76,7 @@ export default function Navigation() {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 onClick={() => setLangOpen(!langOpen)}
-                className="flex items-center gap-2 text-gray-300 hover:text-cyan-400 transition-colors"
+                className="flex items-center gap-2 text-gray-300 hover:text-forest-300 transition-colors"
               >
                 <Globe size={20} />
                 <span className="uppercase">{locale}</span>
@@ -95,7 +95,7 @@ export default function Navigation() {
                         key={lang.code}
                         href={getLocalizedPath(lang.code)}
                         className={`block px-4 py-2 hover:bg-white/10 transition-colors ${
-                          locale === lang.code ? 'text-cyan-400' : 'text-gray-300'
+                          locale === lang.code ? 'text-forest-300' : 'text-gray-300'
                         }`}
                         onClick={() => setLangOpen(false)}
                       >
@@ -111,7 +111,7 @@ export default function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-gray-300 hover:text-primary-400 transition-colors"
+            className="md:hidden text-gray-300 hover:text-forest-300 transition-colors"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -134,7 +134,7 @@ export default function Navigation() {
                   href={item.href}
                   onClick={() => setIsOpen(false)}
                   whileHover={{ x: 10 }}
-                  className="block text-gray-300 hover:text-primary-400 transition-colors font-medium"
+                  className="block text-gray-300 hover:text-forest-300 transition-colors font-medium"
                 >
                   {item.label}
                 </motion.a>
@@ -147,7 +147,7 @@ export default function Navigation() {
                       href={getLocalizedPath(lang.code)}
                       className={`px-3 py-1 rounded glass text-sm ${
                         locale === lang.code
-                          ? 'text-primary-400'
+                          ? 'text-forest-300'
                           : 'text-gray-300'
                       }`}
                       onClick={() => setIsOpen(false)}

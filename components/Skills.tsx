@@ -5,7 +5,12 @@ import { motion } from 'framer-motion';
 import { 
   Code, 
   Database, 
-  Settings
+  Settings,
+  Palette,
+  Wrench,
+  BarChart3,
+  FileText,
+  TestTube
 } from 'lucide-react';
 import { 
   SiJavascript,
@@ -15,6 +20,8 @@ import {
   SiCss3,
   SiTailwindcss,
   SiVuedotjs,
+  SiAngular,
+  SiAntdesign,
   SiTypescript,
   SiBootstrap,
   SiNodedotjs,
@@ -24,7 +31,10 @@ import {
   SiDirectus,
   SiContentful,
   SiStrapi,
-  SiDocker
+  SiDocker,
+  SiNginx,
+  SiYaml,
+  SiRailway
 } from 'react-icons/si';
 import { 
   DiJava
@@ -35,41 +45,65 @@ export default function Skills() {
 
   const skillCategories = [
     {
-      title: t('frontend'),
+      title: t('languages'),
       icon: Code,
       skills: [
-        { name: 'JavaScript', Icon: SiJavascript, level: 90 },
-        { name: 'React', Icon: SiReact, level: 90 },
-        { name: 'Next.js', Icon: SiNextdotjs, level: 90 },
-        { name: 'HTML', Icon: SiHtml5, level: 90 },
-        { name: 'CSS', Icon: SiCss3, level: 90 },
-        { name: 'Tailwind CSS', Icon: SiTailwindcss, level: 90 },
-        { name: 'Vue.js', Icon: SiVuedotjs, level: 70 },
-        { name: 'TypeScript', Icon: SiTypescript, level: 70 },
-        { name: 'Bootstrap', Icon: SiBootstrap, level: 50 },
+        { name: 'JavaScript', Icon: SiJavascript, level: 95 },
+        { name: 'TypeScript', Icon: SiTypescript, level: 55 },
+        { name: 'Java', Icon: DiJava, level: 12 },
+      ],
+    },
+    {
+      title: t('frameworks'),
+      icon: Settings,
+      skills: [
+        { name: 'React', Icon: SiReact, level: 95 },
+        { name: 'Next.js', Icon: SiNextdotjs, level: 95 },
+        { name: 'Express', Icon: SiExpress, level: 70 },
+        { name: 'Vue.js', Icon: SiVuedotjs, level: 55 },
+        { name: 'Angular', Icon: SiAngular, level: 35 },
+      ],
+    },
+    {
+      title: t('styling'),
+      icon: Palette,
+      skills: [
+        { name: 'HTML & CSS', Icon: SiHtml5, level: 95 },
+        { name: 'Tailwind', Icon: SiTailwindcss, level: 95 },
+        { name: 'Bootstrap', Icon: SiBootstrap, level: 55 },
+        { name: 'Ant Design', Icon: SiAntdesign, level: 55 },
       ],
     },
     {
       title: t('backend'),
       icon: Database,
       skills: [
-        { name: 'Node.js', Icon: SiNodedotjs, level: 90 },
-        { name: 'Express', Icon: SiExpress, level: 90 },
-        { name: 'TypeScript', Icon: SiTypescript, level: 70 },
-        { name: 'MongoDB', Icon: SiMongodb, level: 50 },
-        { name: 'Mongoose', Icon: SiMongodb, level: 50 },
-        { name: 'GraphQL', Icon: SiGraphql, level: 50 },
-        { name: 'Java', Icon: DiJava, level: 50 },
+        { name: 'Node.js', Icon: SiNodedotjs, level: 70 },
+        { name: 'MongoDB', Icon: SiMongodb, level: 55 },
+        { name: 'Mongoose', Icon: SiMongodb, level: 52 },
+        { name: 'GraphQL', Icon: SiGraphql, level: 72 },
       ],
     },
     {
       title: t('cms'),
       icon: Settings,
       skills: [
-        { name: 'Directus', Icon: SiDirectus, level: 90 },
-        { name: 'Contentful', Icon: SiContentful, level: 90 },
-        { name: 'Strapi', Icon: SiStrapi, level: 70 },
-        { name: 'Docker', Icon: SiDocker, level: 50 },
+        { name: 'Directus', Icon: SiDirectus, level: 95 },
+        { name: 'Contentful', Icon: SiContentful, level: 75 },
+        { name: 'Strapi', Icon: SiStrapi, level: 72 },
+      ],
+    },
+    {
+      title: t('tools'),
+      icon: Wrench,
+      skills: [
+        { name: 'Railway', Icon: SiRailway, level: 70 },
+        { name: 'Matomo', Icon: BarChart3, level: 70 },
+        { name: 'BrowserStack', Icon: TestTube, level: 70 },
+        { name: 'NGINX', Icon: SiNginx, level: 55 },
+        { name: 'Filestash', Icon: FileText, level: 55 },
+        { name: 'Docker', Icon: SiDocker, level: 30 },
+        { name: 'YAML', Icon: SiYaml, level: 30 },
       ],
     },
   ];
@@ -84,15 +118,15 @@ export default function Skills() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
-            <span className="text-gradient">{t('title')}</span>
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-forest-200">
+            {t('title')}
           </h2>
           <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
             {t('subtitle')}
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, categoryIndex) => (
             <motion.div
               key={category.title}
@@ -103,7 +137,7 @@ export default function Skills() {
               className="glass rounded-2xl p-8"
             >
               <div className="flex items-center gap-4 mb-8">
-                <div className="w-12 h-12 bg-gradient-to-br from-primary-500 via-cyan-500 to-accent-500 rounded-lg flex items-center justify-center">
+                <div className="w-12 h-12 bg-forest-500 rounded-lg flex items-center justify-center">
                   <category.icon size={24} className="text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-white">{category.title}</h3>
@@ -122,15 +156,15 @@ export default function Skills() {
                       {skill.Icon ? (
                         <skill.Icon className="text-2xl text-gray-300 flex-shrink-0" />
                       ) : (
-                        <div className="w-6 h-6 rounded bg-gradient-to-br from-cyan-500/20 to-accent-500/20 border border-cyan-500/30 flex-shrink-0" />
+                        <div className="w-6 h-6 rounded bg-forest-800 border border-forest-600 flex-shrink-0" />
                       )}
                       <span className="text-gray-200 font-medium">{skill.name}</span>
                     </div>
-                    {/* 3-Step Progress Indicator */}
+                    {/* 4-Step Progress Indicator */}
                     <div className="flex gap-2">
-                      {[1, 2, 3].map((step) => {
-                        // Map levels to steps: 50% = 1 step, 70% = 2 steps, 90% = 3 steps
-                        const steps = skill.level >= 90 ? 3 : skill.level >= 70 ? 2 : 1;
+                      {[1, 2, 3, 4].map((step) => {
+                        // Map levels to steps: <50% = 1 step, 50-65% = 2 steps, 65-80% = 3 steps, 80%+ = 4 steps
+                        const steps = skill.level >= 80 ? 4 : skill.level >= 65 ? 3 : skill.level >= 50 ? 2 : 1;
                         const isActive = step <= steps;
                         return (
                           <motion.div
@@ -144,7 +178,7 @@ export default function Skills() {
                             }}
                             className={`flex-1 h-2 rounded-full transition-all ${
                               isActive
-                                ? 'bg-gradient-to-r from-cyan-500 via-primary-500 to-accent-500'
+                                ? 'bg-forest-500'
                                 : 'bg-dark-800'
                             }`}
                           />
