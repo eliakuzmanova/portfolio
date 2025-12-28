@@ -15,10 +15,10 @@
   "about": {
     "title": "About Me",
     "description": "Passionate developer with expertise in modern web technologies. I specialize in building scalable applications with focus on user experience and performance.",
-    "name": "Your Name",
-    "role": "Full Stack Developer & Tech Enthusiast",
-    "bio": "I'm a passionate developer who loves creating innovative solutions. When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.",
-    "tags": ["Problem Solver", "Team Player", "Continuous Learner", "Tech Enthusiast"],
+    "name": "Elia Kuzmanova",
+    "role": "Full Stack Developer",
+    "bio": "Friendly, helpful, and always up for the next challenge – that's me. I love learning new things and finding creative solutions. New technologies? Bring them on! Complex problems? I see them as exciting puzzles. I thrive in team environments and enjoy helping others reach their goals. Motivation and dedication come naturally to me.",
+    "tags": ["Friendly", "Helpful", "Eager to Learn", "Motivated", "Engaged", "Creative"],
     "experience": "Years of Experience",
     "projects": "Projects Completed",
     "technologies": "Technologies Mastered"
@@ -81,68 +81,98 @@
     "code": "View Code",
     "contribution": "My Contribution",
     "note": "Note: This is a selection of public projects. Additional projects are currently under NDA or in development.",
+    "private": "Not Public",
+    "availableOnRequest": "Available on request",
     "items": {
+      "project7": {
+        "title": "Multi-Tenant Sanitätshaus Platform",
+        "description": "Scalable multi-tenant platform for medical supply companies. Each of the 14 planned tenants features individual branding and configuration while sharing core infrastructure. Built with Next.js 15, Algolia search, Directus CMS, and Matomo tracking.",
+        "contribution": "As part of the development team: Multi-tenant architecture & setup, CMS setup & content management, Algolia search integration, Matomo tracking, feature development, bug fixes, documentation, Nginx configuration",
+        "tech": "Next.js 15, Multi-Tenant Architecture, Algolia, Directus CMS, Matomo, Nginx, TypeScript, Zeptomail, ESLint, Prettier",
+        "url": "https://www.xcarstens.de/",
+        "tenants": ["xcarstens.de", "luttermann-wesel.de", "thiesmedicenter.de", "luttermann.de"],
+        "github": null
+      },
       "project1": {
         "title": "BASF Virtual Car",
-        "description": "Interactive 3D car configurator platform allowing users to explore materials and components. Developed CMS integrations, API connections, and synchronization scripts for the offline version.",
-        "contribution": "CMS setup & integrations, API connections, synchronization scripts, offline version integration",
-        "tech": "Vue.js, Three.js, Node.js, CMS, REST APIs, WebGL",
+        "description": "Comprehensive interactive 3D car configurator platform allowing users to explore materials and components. Migration from Vue 2 to Vue 3, Strapi CMS integration, automated backup and language synchronization scripts. NGINX proxy server for routing between different applications (Virtual Car, Offline version, Battery Visualizer).",
+        "contribution": "As part of the development team: Vue 2 to Vue 3 migration, Strapi CMS setup & integration, Express-based automation scripts (backup creation, language synchronization, content extraction for offline version), NGINX proxy server configuration, API connections, PWA implementation",
+        "tech": "Vue 3, Three.js, Strapi CMS, Node.js, Express, NGINX, Railway, PWA, REST APIs, WebGL, IndexedDB, Service Workers",
         "url": "https://www.basf-vcar.com/",
         "github": null
       },
       "project2": {
         "title": "BASF Virtual Car - Offline",
-        "description": "Offline version of the Virtual Car platform with local data synchronization and PWA capabilities for seamless user experience without internet connection.",
-        "contribution": "Offline functionality, data synchronization, PWA implementation",
-        "tech": "Vue.js, PWA, IndexedDB, Service Workers, Sync API",
+        "description": "Offline version of the Virtual Car platform with local data synchronization and PWA capabilities. Automatic content extraction from backups for seamless user experience without internet connection. Integrated into NGINX proxy infrastructure.",
+        "contribution": "As part of the development team: Offline functionality, data synchronization, PWA implementation, content extraction from backups, Express scripts for automatic content provisioning",
+        "tech": "Vue 3, PWA, IndexedDB, Service Workers, Express, NGINX, Railway, Sync API",
         "url": "https://www.basf-vcar.com/basf-vcar-offline",
         "github": null
       },
       "project3": {
         "title": "UP Design Studio",
-        "description": "Modern design studio portfolio website showcasing multidisciplinary design work. Implemented new features, bug fixes, and optimized server configuration.",
-        "contribution": "Feature development, bug fixes, Nginx configuration, performance optimization",
-        "tech": "Next.js, React, Nginx, Headless CMS, TypeScript",
+        "description": "Modern design studio portfolio website showcasing multidisciplinary design work. NGINX proxy server for domain management (www.updesignstudio.de, www.updesignstudio.email, upviz.updesignstudio.de, staging.updesignstudio.de, start.updesignstudio.de). Contentful CMS integration, feature development, and server optimization.",
+        "contribution": "As part of the development team: NGINX proxy server setup & configuration, domain management, Contentful CMS integration, feature development, bug fixes, performance optimization",
+        "tech": "Next.js, NGINX, Contentful CMS, Railway, JavaScript",
         "url": "https://www.updesignstudio.de/",
         "github": null
       },
       "project4": {
         "title": "SMINA - Online Sanitätshaus",
-        "description": "E-commerce platform for medical aids and mobility products. Full-featured online shop with product catalog, prescription upload, and partner network integration.",
-        "contribution": "Frontend development, feature implementation, API integrations",
-        "tech": "React, Node.js, E-commerce, Payment Integration, CMS",
+        "description": "Full-featured e-commerce platform for medical aids with over 200 partner locations. Features: prescription upload with Google Document AI, Algolia search, SMINA Box (digital care aid ordering), chatbot, Contentful CMS, Shopify integration, payment processing (Klarna, PayPal) and DHL shipping.",
+        "contribution": "As part of the development team: Feature development, bug fixes, testing, frontend development, API integrations (Contentful, Shopify, Algolia, Google Document AI), prescription upload implementation, payment integration",
+        "tech": "Next.js 15, Contentful CMS, Algolia, Shopify, Google Document AI, Material-UI, Tailwind CSS, Railway, Friendly Captcha, Nodemailer, ESLint, Prettier",
         "url": "https://www.smina.de/",
         "github": null
       },
       "project5": {
         "title": "Khimi - Auxilium Gruppe",
-        "description": "Corporate platform with CMS integration and custom features. Set up content management system and configured server infrastructure.",
-        "contribution": "CMS setup, backend development, Nginx configuration, feature implementation",
-        "tech": "CMS, Nginx, Backend APIs, Server Configuration",
+        "description": "Playful web application that makes medical aids from medical supply stores interesting and accessible for children. Products are presented in a game-like format to help children understand and engage with assistive devices in a positive and appealing way. Desktop-only application with Directus CMS, Zeptomail integration, Friendly Captcha, and Excel export functionality.",
+        "contribution": "Mainly developed independently (with minor team adjustments): CMS setup, backend development, Nginx configuration, feature implementation",
+        "tech": "Next.js 16, Directus CMS, Zeptomail, Friendly Captcha, Tailwind CSS 4, Nginx, Railway, ESLint, Prettier",
         "url": "https://khimi.auxiliumgruppe.online/",
+        "private": true,
         "github": null
       },
       "project6": {
         "title": "Dürr Interactive Showroom",
-        "description": "Interactive showroom platform showcasing industrial solutions. Implemented Strapi CMS backend and configured server infrastructure for multiple interactive applications.",
-        "contribution": "Strapi CMS setup, Nginx configuration, backend development",
-        "tech": "Strapi CMS, Node.js, Nginx, Interactive 3D, WebGL",
+        "description": "Comprehensive interactive showroom platform for industrial solutions with multiple applications (Interactive Paintshop, NAOTF Interactive, Battery Concept Line). Strapi CMS with separate visitor login and app-specific access based on Strapi settings. NGINX proxy server for CMS management, overview portal, authentication server, and routing to multiple interactive applications. Private networking on Railway for secure internal service communication.",
+        "contribution": "As part of the development team: Strapi CMS setup & configuration, visitor login system with app-specific access, NGINX proxy server configuration (CMS, auth server, multi-app routing), backend development, private networking setup",
+        "tech": "Strapi CMS, Node.js, NGINX, Railway, Private Networking, Auth Server, Interactive 3D, WebGL",
         "url": "https://showroom.durr.com/",
         "github": null
       },
-      "project7": {
-        "title": "Multi-Tenant Sanitätshaus Platform",
-        "description": "Scalable multi-tenant platform serving multiple medical supply companies. Each tenant has customized branding and features while sharing core infrastructure.",
-        "contribution": "Multi-tenant architecture, Nginx configuration, tracking integration, feature development",
-        "tech": "Multi-Tenant Architecture, Nginx, Tracking Integration, CMS, React",
-        "url": "https://www.xcarstens.de/",
-        "tenants": ["xcarstens.de", "luttermann-wesel.de", "thiesmedicenter.de", "luttermann.de"],
+      "project9": {
+        "title": "NGINX Gateway & Proxy Server",
+        "description": "Central NGINX gateway with OpenResty and Auth0 integration for multi-tenant infrastructure. Manages over 20 domains (including www.xcarstens.de, www.luttermann-wesel.de, wirliste.xcarstens.de, updesignstudio.auxiliumgruppe.de, khimi.auxiliumgruppe.online, www.auxiliumgruppe.de and more). Implements Private Networking on Railway, Lua-based authentication, security headers, IP whitelisting, and proxy routing to internal services as well as external Framer pages.",
+        "contribution": "As part of the development team: Gateway setup, NGINX configuration, domain management, security headers, proxy routing",
+        "tech": "NGINX, OpenResty, Lua, Auth0, Railway, Docker, Private Networking",
+        "url": null,
+        "private": true,
+        "github": null
+      },
+      "project10": {
+        "title": "Meyra Power Wheelchairs - Configurator",
+        "description": "Interactive power wheelchair configurator. Step-by-step configuration process with questions about usage, restrictions, and customizations. Features: Mobile-optimized interface, PDF export of configuration, dealer search, link sharing. Responsive design with tab navigation for desktop and mobile tabs for smartphones.",
+        "contribution": "As part of the development team: Frontend development, Vue 3 components, configuration logic, PDF export, dealer integration, mobile-responsive design, UI/UX",
+        "tech": "Vue 3, Tailwind CSS 3.4, jsPDF, HTML5, CSS3, JavaScript, Railway",
+        "url": null,
+        "private": true,
+        "github": null
+      },
+      "project11": {
+        "title": "MacDermid Alpha - TrueNorth Selector Guide",
+        "description": "Interactive material solution guide platform for electronics solutions. Interactive compass navigation for material selection by application areas (Industrial, White Goods, PV, 2 Wheel EV, Auto EV, Auto ICE). Features: Material Solution Positioning, Commercial Considerations, Technical Considerations, Tesseract OCR-based full-text search across all presentation slides and documents.",
+        "contribution": "As part of the development team: Frontend development, Vue.js components, Tesseract OCR search implementation, OCR service for automatic text extraction from images, feature development, UI/UX",
+        "tech": "Vue.js, Tesseract.js, HTML5, CSS3, JavaScript, Railway",
+        "url": null,
+        "private": true,
         "github": null
       },
       "project8": {
         "title": "Additional Projects",
         "description": "Several additional projects are currently under development or covered by non-disclosure agreements. These include enterprise applications, internal tools, and client-specific solutions.",
-        "contribution": "Various contributions across frontend, backend, and infrastructure",
+        "contribution": "As part of various development teams: Contributions across frontend, backend, and infrastructure",
         "tech": "Various modern web technologies",
         "url": null,
         "github": "https://github.com/EliaKuzmanova7"
@@ -152,9 +182,12 @@
   "skills": {
     "title": "Skills & Technologies",
     "subtitle": "Technologies I work with",
-    "frontend": "Frontend",
+    "languages": "Programming Languages",
+    "frameworks": "Frameworks & Libraries",
+    "styling": "Styling & Markup",
     "backend": "Backend",
-    "cms": "CMS & Tools"
+    "cms": "CMS",
+    "tools": "Tools & Infrastructure"
   },
   "contact": {
     "title": "Let's Work Together",

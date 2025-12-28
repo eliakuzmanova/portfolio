@@ -9,10 +9,6 @@
 }
 
 @layer utilities {
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-primary-500 to-accent-500;
-  }
-  
   .glass {
     @apply bg-white/5 backdrop-blur-md border border-white/10;
   }
@@ -32,11 +28,11 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-gradient-to-b from-primary-600 to-accent-600 rounded-full;
+  @apply bg-forest-500 rounded-full;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply from-primary-500 to-accent-500;
+  @apply bg-forest-400;
 }
 
 /* Smooth animations */
