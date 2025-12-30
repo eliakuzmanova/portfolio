@@ -187,7 +187,9 @@
     "styling": "Styling & Markup",
     "backend": "Backend",
     "cms": "CMS",
-    "tools": "Tools & Infrastruktur"
+    "tools": "Tools & Infrastruktur",
+    "testing": "Testing",
+    "cloud": "Cloud"
   },
   "contact": {
     "title": "Lass uns zusammenarbeiten",
