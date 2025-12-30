@@ -10,7 +10,8 @@ import {
   Wrench,
   BarChart3,
   FileText,
-  TestTube
+  TestTube,
+  Cloud
 } from 'lucide-react';
 import { 
   SiJavascript,
@@ -34,7 +35,11 @@ import {
   SiDocker,
   SiNginx,
   SiYaml,
-  SiRailway
+  SiRailway,
+  SiJest,
+  SiMocha,
+  SiAmazonaws,
+  SiMicrosoftazure
 } from 'react-icons/si';
 import { 
   DiJava
@@ -59,7 +64,6 @@ export default function Skills() {
       skills: [
         { name: 'React', Icon: SiReact, level: 95 },
         { name: 'Next.js', Icon: SiNextdotjs, level: 95 },
-        { name: 'Express', Icon: SiExpress, level: 70 },
         { name: 'Vue.js', Icon: SiVuedotjs, level: 55 },
         { name: 'Angular', Icon: SiAngular, level: 35 },
       ],
@@ -78,10 +82,11 @@ export default function Skills() {
       title: t('backend'),
       icon: Database,
       skills: [
+        { name: 'GraphQL', Icon: SiGraphql, level: 72 },
         { name: 'Node.js', Icon: SiNodedotjs, level: 70 },
+        { name: 'Express', Icon: SiExpress, level: 70 },
         { name: 'MongoDB', Icon: SiMongodb, level: 55 },
         { name: 'Mongoose', Icon: SiMongodb, level: 52 },
-        { name: 'GraphQL', Icon: SiGraphql, level: 72 },
       ],
     },
     {
@@ -97,13 +102,29 @@ export default function Skills() {
       title: t('tools'),
       icon: Wrench,
       skills: [
-        { name: 'Railway', Icon: SiRailway, level: 70 },
         { name: 'Matomo', Icon: BarChart3, level: 70 },
-        { name: 'BrowserStack', Icon: TestTube, level: 70 },
         { name: 'NGINX', Icon: SiNginx, level: 55 },
         { name: 'Filestash', Icon: FileText, level: 55 },
         { name: 'Docker', Icon: SiDocker, level: 30 },
         { name: 'YAML', Icon: SiYaml, level: 30 },
+      ],
+    },
+    {
+      title: t('testing'),
+      icon: TestTube,
+      skills: [
+        { name: 'BrowserStack', level: 70 },
+        { name: 'Jest', Icon: SiJest, level: 10 },
+        { name: 'Mocha', Icon: SiMocha, level: 10 },
+      ],
+    },
+    {
+      title: t('cloud'),
+      icon: Cloud,
+      skills: [
+        { name: 'Railway', Icon: SiRailway, level: 70 },
+        { name: 'AWS', Icon: SiAmazonaws, level: 10 },
+        { name: 'Azure', Icon: SiMicrosoftazure, level: 10 },
       ],
     },
   ];
@@ -153,10 +174,8 @@ export default function Skills() {
                     transition={{ duration: 0.5, delay: categoryIndex * 0.2 + skillIndex * 0.1 }}
                   >
                     <div className="flex items-center gap-3 mb-3">
-                      {skill.Icon ? (
+                      {skill.Icon && (
                         <skill.Icon className="text-2xl text-gray-300 flex-shrink-0" />
-                      ) : (
-                        <div className="w-6 h-6 rounded bg-forest-800 border border-forest-600 flex-shrink-0" />
                       )}
                       <span className="text-gray-200 font-medium">{skill.name}</span>
                     </div>
