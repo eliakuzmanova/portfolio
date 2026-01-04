@@ -27,6 +27,21 @@ export default function Navigation() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      if (langOpen && !target.closest('.language-selector')) {
+        setLangOpen(false);
+      }
+    };
+    if (langOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [langOpen]);
+
   const navItems = [
     { href: '#home', label: t('home') },
     { href: '#projects', label: t('projects') },
@@ -43,9 +58,10 @@ export default function Navigation() {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full max-w-full overflow-x-hidden ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full ${
         scrolled ? 'glass-strong py-3' : 'bg-transparent py-5'
       }`}
+      style={{ position: 'fixed' }}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
@@ -71,7 +87,7 @@ export default function Navigation() {
             ))}
             
             {/* Language Selector */}
-            <div className="relative">
+            <div className="relative language-selector">
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -88,7 +104,7 @@ export default function Navigation() {
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
-                    className="absolute right-0 mt-2 glass rounded-lg overflow-hidden min-w-[120px]"
+                    className="absolute right-0 mt-2 glass rounded-lg overflow-hidden min-w-[120px] z-[60]"
                   >
                     {languages.map((lang) => (
                       <Link
