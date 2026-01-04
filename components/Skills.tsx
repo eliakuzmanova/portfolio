@@ -54,7 +54,7 @@ export default function Skills() {
       icon: Code,
       skills: [
         { name: 'JavaScript', Icon: SiJavascript, level: 95 },
-        { name: 'TypeScript', Icon: SiTypescript, level: 55 },
+        { name: 'TypeScript', Icon: SiTypescript, level: 75 },
         { name: 'Java', Icon: DiJava, level: 12 },
       ],
     },
@@ -64,7 +64,7 @@ export default function Skills() {
       skills: [
         { name: 'React', Icon: SiReact, level: 95 },
         { name: 'Next.js', Icon: SiNextdotjs, level: 95 },
-        { name: 'Vue.js', Icon: SiVuedotjs, level: 55 },
+        { name: 'Vue.js', Icon: SiVuedotjs, level: 75 },
         { name: 'Angular', Icon: SiAngular, level: 35 },
       ],
     },
@@ -74,19 +74,19 @@ export default function Skills() {
       skills: [
         { name: 'HTML & CSS', Icon: SiHtml5, level: 95 },
         { name: 'Tailwind', Icon: SiTailwindcss, level: 95 },
-        { name: 'Bootstrap', Icon: SiBootstrap, level: 55 },
-        { name: 'Ant Design', Icon: SiAntdesign, level: 55 },
+        { name: 'Bootstrap', Icon: SiBootstrap, level: 75 },
+        { name: 'Ant Design', Icon: SiAntdesign, level: 75 },
       ],
     },
     {
       title: t('backend'),
       icon: Database,
       skills: [
+        { name: 'Node.js', Icon: SiNodedotjs, level: 90 },
+        { name: 'Express', Icon: SiExpress, level: 90 },
+        { name: 'MongoDB', Icon: SiMongodb, level: 75 },
+        { name: 'Mongoose', Icon: SiMongodb, level: 75 },
         { name: 'GraphQL', Icon: SiGraphql, level: 72 },
-        { name: 'Node.js', Icon: SiNodedotjs, level: 70 },
-        { name: 'Express', Icon: SiExpress, level: 70 },
-        { name: 'MongoDB', Icon: SiMongodb, level: 55 },
-        { name: 'Mongoose', Icon: SiMongodb, level: 52 },
       ],
     },
     {
