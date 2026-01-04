@@ -38,8 +38,7 @@ import {
   SiRailway,
   SiJest,
   SiMocha,
-  SiAmazonaws,
-  SiMicrosoftazure
+  SiAmazon
 } from 'react-icons/si';
 import { 
   DiJava
@@ -123,8 +122,8 @@ export default function Skills() {
       icon: Cloud,
       skills: [
         { name: 'Railway', Icon: SiRailway, level: 70 },
-        { name: 'AWS', Icon: SiAmazonaws, level: 10 },
-        { name: 'Azure', Icon: SiMicrosoftazure, level: 10 },
+        { name: 'AWS', Icon: SiAmazon, level: 10 },
+        { name: 'Azure', level: 10 },
       ],
     },
   ];
