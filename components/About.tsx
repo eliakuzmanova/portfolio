@@ -9,9 +9,9 @@ export default function About() {
   const t = useTranslations('about');
 
   const stats = [
-    { icon: Code2, value: '2+', label: t('experience') },
-    { icon: Rocket, value: '10+', label: t('projects') },
-    { icon: Zap, value: '20+', label: t('technologies') },
+    { icon: Code2, value: '4', label: t('experience') },
+    { icon: Rocket, value: '15+', label: t('projects') },
+    { icon: Zap, value: '30+', label: t('technologies') },
   ];
 
   return (
